@@ -16,6 +16,7 @@ const logar = (event) => {
     firebase.auth().signInWithEmailAndPassword(email, senha)
         .then(result => {
             localStorage.setItem('tarefas', result.user.refreshToken);
+            console.log (result);
             alert('Seja bem vindo');
         })
         .catch(error => {

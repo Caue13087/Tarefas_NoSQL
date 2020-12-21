@@ -20,7 +20,6 @@ const Cadastrar = () => {
             .then(result => {
                 localStorage.setItem('tarefas', result.user.refreshToken);
                 alert('Usuário cadastrado');
-                //navega para a página 
             })
             .catch(error => {
                 alert('Email ou senha inválidos');
